@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Storia</string>
+    <string name="category_Them">Them</string>
+    <string name="category_Setting">Setting</string>
+    <string name="category_LogOut">Log Out</string>
+    <string name="category_About">About</string>
+</resources>

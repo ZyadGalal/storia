@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/camera_bakground" />
+
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btn_capture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/action_bar"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        app:cb_color="#00000000"
+        app:cb_pressedRingWidth="6dip" />
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:alpha=".5"
+        android:background="#000000"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/btn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/btn_caht"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/chate" />
+
+        <ImageView
+            android:id="@+id/btn_story"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/story" />
+
+    </RelativeLayout>
+</RelativeLayout>
